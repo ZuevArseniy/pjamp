@@ -1,0 +1,560 @@
+{
+  "mockup": {
+    "controls": {
+      "control": [
+        {
+          "ID": "0",
+          "typeID": "BrowserWindow",
+          "zOrder": "0",
+          "w": "1212",
+          "h": "805",
+          "measuredW": "450",
+          "measuredH": "400",
+          "x": "196",
+          "y": "7",
+          "properties": {
+            "text": "A Web Page\nhttps://pjamp.pl"
+          }
+        },
+        {
+          "ID": "1",
+          "typeID": "Canvas",
+          "zOrder": "1",
+          "w": "1212",
+          "h": "100",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "196",
+          "y": "80",
+          "properties": {
+            "color": "14540253"
+          }
+        },
+        {
+          "ID": "2",
+          "typeID": "Switch",
+          "zOrder": "2",
+          "measuredW": "42",
+          "measuredH": "24",
+          "x": "1338",
+          "y": "118"
+        },
+        {
+          "ID": "4",
+          "typeID": "Icon",
+          "zOrder": "3",
+          "measuredW": "48",
+          "measuredH": "48",
+          "x": "238",
+          "y": "106",
+          "properties": {
+            "icon": {
+              "ID": "globe",
+              "size": "large"
+            }
+          }
+        },
+        {
+          "ID": "5",
+          "typeID": "Canvas",
+          "zOrder": "4",
+          "w": "189",
+          "h": "352",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "286",
+          "y": "284",
+          "properties": {
+            "color": "16370588"
+          }
+        },
+        {
+          "ID": "6",
+          "typeID": "Canvas",
+          "zOrder": "5",
+          "w": "189",
+          "h": "352",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "556",
+          "y": "284",
+          "properties": {
+            "color": "11982760"
+          }
+        },
+        {
+          "ID": "7",
+          "typeID": "Canvas",
+          "zOrder": "6",
+          "w": "189",
+          "h": "352",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "827",
+          "y": "284",
+          "properties": {
+            "color": "10470904"
+          }
+        },
+        {
+          "ID": "8",
+          "typeID": "Canvas",
+          "zOrder": "7",
+          "w": "189",
+          "h": "352",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "1116",
+          "y": "284",
+          "properties": {
+            "color": "14001853"
+          }
+        },
+        {
+          "ID": "10",
+          "typeID": "Label",
+          "zOrder": "8",
+          "measuredW": "102",
+          "measuredH": "40",
+          "x": "330",
+          "y": "110",
+          "properties": {
+            "text": "PJAMP",
+            "size": "32"
+          }
+        },
+        {
+          "ID": "11",
+          "typeID": "Canvas",
+          "zOrder": "9",
+          "w": "13",
+          "h": "54",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "273",
+          "y": "401",
+          "properties": {
+            "color": "6710886"
+          }
+        },
+        {
+          "ID": "12",
+          "typeID": "Canvas",
+          "zOrder": "10",
+          "w": "13",
+          "h": "54",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "475",
+          "y": "401",
+          "properties": {
+            "color": "6710886"
+          }
+        },
+        {
+          "ID": "13",
+          "typeID": "Canvas",
+          "zOrder": "11",
+          "w": "13",
+          "h": "54",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "543",
+          "y": "401",
+          "properties": {
+            "color": "6710886"
+          }
+        },
+        {
+          "ID": "14",
+          "typeID": "Canvas",
+          "zOrder": "12",
+          "w": "13",
+          "h": "54",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "745",
+          "y": "401",
+          "properties": {
+            "color": "6710886"
+          }
+        },
+        {
+          "ID": "15",
+          "typeID": "Canvas",
+          "zOrder": "13",
+          "w": "13",
+          "h": "54",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "814",
+          "y": "401",
+          "properties": {
+            "color": "6710886"
+          }
+        },
+        {
+          "ID": "16",
+          "typeID": "Canvas",
+          "zOrder": "14",
+          "w": "13",
+          "h": "54",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "1016",
+          "y": "401",
+          "properties": {
+            "color": "6710886"
+          }
+        },
+        {
+          "ID": "17",
+          "typeID": "Canvas",
+          "zOrder": "15",
+          "w": "13",
+          "h": "54",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "1103",
+          "y": "401",
+          "properties": {
+            "color": "6710886"
+          }
+        },
+        {
+          "ID": "18",
+          "typeID": "Canvas",
+          "zOrder": "16",
+          "w": "13",
+          "h": "54",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "1305",
+          "y": "401",
+          "properties": {
+            "color": "6710886"
+          }
+        },
+        {
+          "ID": "19",
+          "typeID": "RoundButton",
+          "zOrder": "17",
+          "w": "42",
+          "h": "42",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "319",
+          "y": "332"
+        },
+        {
+          "ID": "20",
+          "typeID": "RoundButton",
+          "zOrder": "18",
+          "w": "42",
+          "h": "42",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "399",
+          "y": "332"
+        },
+        {
+          "ID": "21",
+          "typeID": "RoundButton",
+          "zOrder": "19",
+          "w": "42",
+          "h": "42",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "589",
+          "y": "332"
+        },
+        {
+          "ID": "22",
+          "typeID": "RoundButton",
+          "zOrder": "20",
+          "w": "42",
+          "h": "42",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "670",
+          "y": "332"
+        },
+        {
+          "ID": "23",
+          "typeID": "RoundButton",
+          "zOrder": "21",
+          "w": "42",
+          "h": "42",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "861",
+          "y": "332"
+        },
+        {
+          "ID": "24",
+          "typeID": "RoundButton",
+          "zOrder": "22",
+          "w": "42",
+          "h": "42",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "948",
+          "y": "332"
+        },
+        {
+          "ID": "25",
+          "typeID": "RoundButton",
+          "zOrder": "23",
+          "w": "42",
+          "h": "42",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "1148",
+          "y": "332"
+        },
+        {
+          "ID": "26",
+          "typeID": "RoundButton",
+          "zOrder": "24",
+          "w": "42",
+          "h": "42",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "1239",
+          "y": "332"
+        },
+        {
+          "ID": "27",
+          "typeID": "RoundButton",
+          "zOrder": "25",
+          "w": "42",
+          "h": "42",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "360",
+          "y": "500",
+          "properties": {
+            "color": "6710886"
+          }
+        },
+        {
+          "ID": "28",
+          "typeID": "RoundButton",
+          "zOrder": "26",
+          "w": "42",
+          "h": "42",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "630",
+          "y": "500",
+          "properties": {
+            "color": "6710886"
+          }
+        },
+        {
+          "ID": "29",
+          "typeID": "RoundButton",
+          "zOrder": "27",
+          "w": "42",
+          "h": "42",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "901",
+          "y": "500",
+          "properties": {
+            "color": "6710886"
+          }
+        },
+        {
+          "ID": "30",
+          "typeID": "RoundButton",
+          "zOrder": "28",
+          "w": "42",
+          "h": "42",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "1190",
+          "y": "500",
+          "properties": {
+            "color": "6710886"
+          }
+        },
+        {
+          "ID": "31",
+          "typeID": "RoundButton",
+          "zOrder": "29",
+          "w": "24",
+          "h": "24",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "369",
+          "y": "448",
+          "properties": {
+            "color": "13369344"
+          }
+        },
+        {
+          "ID": "33",
+          "typeID": "RoundButton",
+          "zOrder": "30",
+          "w": "24",
+          "h": "24",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "910",
+          "y": "448",
+          "properties": {
+            "color": "15374745"
+          }
+        },
+        {
+          "ID": "34",
+          "typeID": "RoundButton",
+          "zOrder": "31",
+          "w": "24",
+          "h": "24",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "1199",
+          "y": "448",
+          "properties": {
+            "color": "13369344"
+          }
+        },
+        {
+          "ID": "35",
+          "typeID": "RoundButton",
+          "zOrder": "32",
+          "w": "24",
+          "h": "24",
+          "measuredW": "32",
+          "measuredH": "32",
+          "x": "639",
+          "y": "448",
+          "properties": {
+            "color": "15374745"
+          }
+        },
+        {
+          "ID": "36",
+          "typeID": "Label",
+          "zOrder": "33",
+          "measuredW": "83",
+          "measuredH": "40",
+          "x": "339",
+          "y": "401",
+          "properties": {
+            "text": "Brand",
+            "size": "32"
+          }
+        },
+        {
+          "ID": "37",
+          "typeID": "Label",
+          "zOrder": "34",
+          "measuredW": "83",
+          "measuredH": "40",
+          "x": "609",
+          "y": "401",
+          "properties": {
+            "text": "Brand",
+            "size": "32"
+          }
+        },
+        {
+          "ID": "38",
+          "typeID": "Label",
+          "zOrder": "35",
+          "measuredW": "83",
+          "measuredH": "40",
+          "x": "880",
+          "y": "401",
+          "properties": {
+            "text": "Brand",
+            "size": "32"
+          }
+        },
+        {
+          "ID": "39",
+          "typeID": "Label",
+          "zOrder": "36",
+          "measuredW": "83",
+          "measuredH": "40",
+          "x": "1169",
+          "y": "401",
+          "properties": {
+            "text": "Brand",
+            "size": "32"
+          }
+        },
+        {
+          "ID": "40",
+          "typeID": "Label",
+          "zOrder": "37",
+          "measuredW": "156",
+          "measuredH": "36",
+          "x": "303",
+          "y": "567",
+          "properties": {
+            "size": "28",
+            "text": "Effect name",
+            "italic": "true"
+          }
+        },
+        {
+          "ID": "41",
+          "typeID": "Label",
+          "zOrder": "38",
+          "measuredW": "156",
+          "measuredH": "36",
+          "x": "573",
+          "y": "567",
+          "properties": {
+            "size": "28",
+            "text": "Effect name",
+            "italic": "true"
+          }
+        },
+        {
+          "ID": "42",
+          "typeID": "Label",
+          "zOrder": "39",
+          "measuredW": "156",
+          "measuredH": "36",
+          "x": "844",
+          "y": "567",
+          "properties": {
+            "size": "28",
+            "text": "Effect name",
+            "italic": "true"
+          }
+        },
+        {
+          "ID": "43",
+          "typeID": "Label",
+          "zOrder": "40",
+          "measuredW": "156",
+          "measuredH": "36",
+          "x": "1133",
+          "y": "567",
+          "properties": {
+            "size": "28",
+            "text": "Effect name",
+            "italic": "true"
+          }
+        }
+      ]
+    },
+    "attributes": {
+      "name": "PJAMP",
+      "order": 938428.5264654435,
+      "parentID": null
+    },
+    "resourceID": "2278E287-509B-183B-1098-2EC38DDDB7D8",
+    "mockupH": "805",
+    "mockupW": "1212",
+    "measuredW": "1408",
+    "measuredH": "812",
+    "version": "1.0"
+  }
+}
