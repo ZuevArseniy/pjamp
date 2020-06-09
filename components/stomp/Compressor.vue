@@ -12,7 +12,7 @@
             <button></button>
         </div>
         <div class="title-bottom">
-            Geisha Compressor
+            Atsuryoku Compressor
         </div>
     </div>
 </template>
@@ -20,7 +20,7 @@
 <script>
     import Knob from "../elements/Knob";
     export default {
-        name: "Compressor",
+        name: "Delay",
         components: {Knob}
     }
 </script>

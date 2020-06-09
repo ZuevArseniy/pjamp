@@ -25,7 +25,7 @@
         name: "Cabinet",
         props: ['input'],
         mounted() {
-            fetch('/audio/impulse.wav')
+            fetch('audio/impulse.wav')
                 .then(response => response.arrayBuffer())
                 .then(buffer => {
                     ctx.decodeAudioData(buffer, decoded => {

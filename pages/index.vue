@@ -129,11 +129,14 @@ export default {
   .overdrive {
     background-color: #562237;
   }
-  .compressor {
-    background-color: #c6233e;
-  }
   .reverb {
     background-color: #d98f0d;
+  }
+  .compressor {
+    background-color: #e34c2f;
+  }
+  .autowah {
+    background-color: #53657e;
   }
   .amp {
     background-color: #5d7e4e;

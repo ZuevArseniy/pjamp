@@ -1,7 +1,8 @@
 <template>
 <div class="container">
     <Overdrive :input="this.input" @output="onOverdriveOutput" />
-    <Compressor/>
+    <Tremolo :input="this.tremoloInput" @output="onTremoloOutput"/>
+    <Autowah :input="this.autowahInput" @output="onAutoWahOutput"/>
     <Reverb :input="this.reverbInput" @output="onReverbOutput"/>
     <Cabinet :input="this.cabinetInput" @output="onCabinetOutput" />
 </div>
@@ -12,15 +13,19 @@
     import Cabinet from "./stomp/Cabinet";
     import Overdrive from "./stomp/Overdrive";
     import Reverb from "./stomp/Reverb";
-    import Compressor from "./stomp/Compressor";
+    import Tremolo from "./stomp/Tremolo";
+    import Autowah from "./stomp/Autowah";
+
     export default {
         name: "Pedalboard",
         props: ['input'],
-        components: {Compressor, Reverb, Overdrive, Cabinet},
+        components: {Tremolo, Reverb, Overdrive, Cabinet, Autowah},
         data() {
             return {
                 cabinetInput: null,
                 reverbInput: null,
+                tremoloInput: null,
+                autowahInput: null,
             }
         },
         watch: {
@@ -31,6 +36,10 @@
             }
         },
         methods: {
+            onTremoloOutput(stream) {
+                this.autowahInput = stream;
+
+            },
             onCabinetOutput(stream) {
                 this.$emit('output', stream);
             },
@@ -38,7 +47,10 @@
                 this.cabinetInput = stream;
             },
             onOverdriveOutput(stream) {
-                this.reverbInput = stream;
+                this.tremoloInput = stream;
+            },
+            onAutoWahOutput(stream) {
+                this.reverbInput = stream
             }
         }
     }

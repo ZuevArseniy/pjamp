@@ -1,12 +1,13 @@
 <template>
-    <div class="pedal reverb">
+    <div class="pedal tremolo">
         <div class="controls">
-            <Knob :min="0" :max="1" label="mix" @change="setMix" :default-value="0.3"/>
+            <Knob :min="0" :max="1" label="mix" @change="setMix" :default-value="0.7"/>
+            <Knob :min="1" :max="10" label="speed" @change="setSpeed" :default-value="3"/>
         </div>
         <div class="title-top">PJAMP</div>
         <Toggle :turned-on="turnedOn" @toggle="toggle"/>
         <div class="title-bottom">
-            Chashitsu Reverb
+            Myakudo Tremolo
         </div>
     </div>
 </template>
@@ -19,29 +20,19 @@
     import Toggle from "../elements/Toggle";
 
     export default {
-        name: "Reverb",
+        name: "Tremolo",
         components: {Knob, Toggle},
         props: ['input'],
-        mounted() {
-            fetch('audio/greek_rev.wav')
-                .then(response => response.arrayBuffer())
-                .then(buffer => {
-                    ctx.decodeAudioData(buffer, decoded => {
-                        this.impulse = decoded;
-                    })
-                        .catch((err) => console.error(err));
-                });
-        },
         data() {
             return {
                 inNode: null,
-                convNode: null,
                 outNode: null,
                 dryNode: null,
-                convVolume: null,
+                tremoloGain: null,
                 mix: null,
+                speed: null,
                 wetNode: null,
-                impulse: null,
+                oscillator: null,
                 turnedOn: false,
             }
         },
@@ -58,27 +49,34 @@
         methods: {
             setMix(value) {
                 this.mix = value;
-                console.log(this.mix);
                 if (this.dryNode && this.wetNode) {
-                    this.wetNode.gain.value =value;
+                    this.wetNode.gain.value = value;
                     this.dryNode.gain.value = 1 - value;
+                }
+            },
+            setSpeed(value) {
+                this.speed = value;
+                if (this.oscillator) {
+                    this.oscillator.frequency.value = value;
                 }
             },
             build() {
                 if (!this.inNode && !this.outNode) {
                     this.inNode = ctx.createGain();
                     this.outNode = ctx.createGain();
-                    this.convNode = ctx.createConvolver();
-                    this.convVolume = ctx.createGain();
-                    this.convVolume.gain.value = 3;
+
+                    this.oscillator = ctx.createOscillator();
+                    this.tremoloGain = ctx.createGain();
                     this.dryNode = ctx.createGain();
                     this.wetNode = ctx.createGain();
+                    this.oscillator.frequency.value = this.speed;
+                    this.oscillator.connect(this.tremoloGain.gain);
+                    this.oscillator.start();
                     this.wetNode.gain.value = this.mix;
                     this.dryNode.gain.value = 1 - this.mix;
-                    this.convNode.buffer = this.impulse;
                 }
                 this.inNode.connect(this.dryNode).connect(this.outNode);
-                this.inNode.connect(this.convNode).connect(this.convVolume).connect(this.wetNode).connect(this.outNode);
+                this.inNode.connect(this.tremoloGain).connect(this.wetNode).connect(this.outNode);
             },
             turnOn() {
                 this.build();
@@ -101,5 +99,7 @@
 </script>
 
 <style scoped>
-
+ .tremolo {
+     background-color: #c6233e;
+ }
 </style>

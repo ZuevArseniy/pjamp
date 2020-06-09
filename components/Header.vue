@@ -42,7 +42,7 @@
             }
         },
         mounted() {
-            fetch('/audio/demo.mp3')
+            fetch('audio/demo.mp3')
                 .then(response => response.arrayBuffer())
                 .then(arrayBuffer => ctx.decodeAudioData(arrayBuffer))
                 .then(audioBuffer => {
@@ -82,7 +82,7 @@
 
 <style lang="scss" scoped>
     header {
-        background-image: url("~assets/img/steel.jpg");
+        background-image: url("~assets/img/golden.jpg");
         background-size: 100%;
         padding: 20px 50px;
         height: 100px;

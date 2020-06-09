@@ -105,7 +105,6 @@
             if (this.defaultValue) {
                 this.rotatedDeg = this.rotateDegByValue(this.defaultValue);
                 this.$refs.rotary.style = 'transform: rotate(' + this.rotatedDeg  + 'deg)';
-                console.log(this.value);
             }
             this.$emit('change', this.value);
         }
